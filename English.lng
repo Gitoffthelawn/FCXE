@@ -314,6 +314,8 @@
 34316=Row
 34317=Hotkey activates filter when field is populated
 34318=Search text must begin name
+34319=Predefined quick filters:
+34320=Example: txt|jpg;jpeg|.doc
 
 
 34400=no_translate: Settings - Select items
@@ -1370,6 +1372,8 @@
 55224=Toolbar
 55225=Show in
 55226=Separate for each selected item
+55227=Delimiter character for selected items (space is default)
+55228=Enclose each selected item with quotes
 
 
 56000=no_translate: Search Form
@@ -2343,7 +2347,16 @@ actDirOpenRecycleBin=Recycle Bin; Open Recycle Bin
 actDirOpenNetwork=Network; Open list of available network folders
 actDirOpenMyComputer=My Computer; Open My Computer folder
 actDirLinkedBrowsing=Link panes; Select and open same items in inactive pane when displaying the same folders
-
+actDirQuickFilterSet1=Quick filter 1; Set predefined quick filter 1
+actDirQuickFilterSet2=Quick filter 2; Set predefined quick filter 2
+actDirQuickFilterSet3=Quick filter 3; Set predefined quick filter 3
+actDirQuickFilterSet4=Quick filter 4; Set predefined quick filter 4
+actDirQuickFilterSet5=Quick filter 5; Set predefined quick filter 5
+actDirQuickFilterSet6=Quick filter 6; Set predefined quick filter 6
+actDirQuickFilterSet7=Quick filter 7; Set predefined quick filter 7
+actDirQuickFilterSet8=Quick filter 8; Set predefined quick filter 8
+actDirQuickFilterSet9=Quick filter 9; Set predefined quick filter 9
+actDirQuickFilterPredefinedPopupMenu=Quick filter popup menu; Show popup menu with predefined quick filters
 
 
 actDosPromptGoTo=Go to Command Prompt; Switch between file list and DOS command prompt line
