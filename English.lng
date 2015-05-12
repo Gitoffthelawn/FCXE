@@ -2002,6 +2002,7 @@
 61232=Auto-preview
 61233=Profile:
 61234=%d File(s), %d Folder(s), %d Error(s)
+61235=Reset per folder
 
 
 62000=no_translate: Filter Hints
@@ -2285,6 +2286,45 @@
 67801=Thanks for using FreeCommander.
 67802=Please consider donating to help support the further development of FreeCommander.
 67803=Donation
+
+67900=no_translate: Dialog Print Folder
+67901=Make folder list
+67902=Selected item(s):
+67903=from:
+67904=Operation
+67905=Files
+67906=Settings
+67907=Include files and folders in subfolders
+67908=Include only files of this type:
+67909=Example (wildcard): *.txt;a*.doc  |  Example (regex): [0-9]*_[0-9]*\.bmp
+67910=Output file
+67911=New file
+67912=Append to file
+67913=Use profile
+67914=Pause
+67915=Reload
+67916=Auto-close on successful operation
+67917=Auto-close on canceled operation
+67918=Defined filter
+67919=Name
+67920=Error message
+67921=Path
+67922=%d File(s), %d Folder
+67923=Data loading error
+67924=Reading files: %d
+67925=List creation operation is in progress.
+67926=Cancel the operation?
+67927=%d error(s)
+67928=Folder:
+67929=Number of files:
+67930=Size of files:
+67931=Folder list
+67932=Summary
+67933=Folders:
+67934=Files:
+67935=Default_Profile (tab separated fields)
+67936=Default_Profile (fixed length fields)
+
 
 [ShortCutsTxt]
 actDirBack=Go up; Up one level
