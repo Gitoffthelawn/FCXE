@@ -1021,7 +1021,7 @@
 41008=Save shortcuts list...
 41009=This new shortcut is already assigned to another command.
 41010=Would you like to assign it anyway?
-41011=Would you like to remove the current shortcut and assign the new one?
+41011=Would you like to replace the current shortcut with the new one?
 41012=This command already has a shortcut assigned.
 41013=This shortcut is not available.
 41014=Not assigned
