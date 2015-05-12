@@ -969,6 +969,8 @@
 38037=Address
 38038=File container
 38039=Description
+38040=Use flat images (20x20 and 32x32) (requires restart)
+
 
 38900=no_translate: Action Categories
 38901=File
@@ -2038,6 +2040,7 @@
 62104=[Sa]        match S, s, a, and A
 62105=[!S]         match anything except S or s
 62106=Examples: *.txt; [0-9]*.tmp;" *.png"
+62107=Begin mask with -[]: to use [] as literals
 62150=Wildcard Search:
 62151=*             match zero or more characters
 62152=?             match any single character
