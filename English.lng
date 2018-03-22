@@ -1,34 +1,44 @@
-; --------------------------------------------------------------------
-; FreeCommander XE English Language (en-us) User Interface 
+; -------------------------------------------------------------------------------
+; English Language (en-us) User Interface for FreeCommander XE
 ;
 ; Created by Gitoffthelawn
 ;
-; Contact for User Interface and Usability Jobs
+; Contact me for your user interface (UI), usability (UX),
+;   testing, and documentation needs at:
+;     Email: gitoffthelawn@tuta.io
+;       and
+;     https://github.com/Gitoffthelawn/Contact-Gitoffthelawn
 ;
 ;
 ; Goals: Clear, concise, consistent.
 ;
 ;
-; Copyright (c) 2015 Gitoffthelawn.  All rights reserved.
+; Copyright (c) 2015-2018 Gitoffthelawn.  All rights reserved.
 ;
-; Version 6.85.18 (updated 2015/05/11)
-; Designed to be compatible with: FreeCommander XE (build 685)
+; Version 7.70.04 (updated 2018/03/22)
+; Available at: https://github.com/Gitoffthelawn/FCXE
+;
+; Compatible with FreeCommander XE (build 770)
 ;
 ;
 ; Based on original translation by unknown author.
-; Licensed for use with free (no cost) products.
+; Licensed for use with free (no cost, including handling/shipping/distribution)
+; products that are released without any feature limitations and not bundled
+; with other products.
+;
+; No responsibility assumed for any liabilities.
 ; There is no warranty or other guarantee of fitness for any purpose.
 ; Use at your own risk.
 ;
 ; Many thanks to Marek Jasinski for FreeCommander XE,
 ; and to the FreeCommander community for all their support.
 ;
-; --------------------------------------------------------------------
+; -------------------------------------------------------------------------------
+
 
 [Text]
 1=fc_ShortCuts_en.htm
 2=licence_eng.rtf
-
 
 
 2001=OK
@@ -37,7 +47,10 @@
 2004=Run
 2005=Find
 2006=Save
-
+2007=Disconnect
+2008=Yes
+2009=No
+2010=Queue
 
 
 3000=Folder path - top/left
@@ -95,6 +108,7 @@
 3066=Compressed
 3067=Encrypted
 
+
 4000=no_translate: Program Main Menu
 4001=File
 4002=Edit
@@ -126,6 +140,7 @@
 4028=Define...
 4029=Windows XP
 4030=Classic
+4031=Color schemas
 
 4501=This tab is locked. Close anyway?
 4502=This operation deletes items from both the disk and the container!
@@ -147,7 +162,7 @@
 4518=Password needed
 4519=Enter password:
 4520=Archive: %s
-4521=The files in the source and target folder are identical.
+4521=The files in the source and target folders are identical.
 4522=Clear history
 4523=Sort
 4524=No profiles defined
@@ -161,7 +176,7 @@
 4532=Subfolders
 4533=Restore
 4534=Exit
-4535=The file %s was changed. Do you want to copy it to %s
+4535=The file "%s" was changed. Do you want to copy it to "%s"
 4536=New file: %s
 4537=(right-click: subfolders)
 4538=(long right-click: context menu)
@@ -187,18 +202,45 @@
 4558=Free disk space:
 4559=Total disk space:
 4560=Some file operations are in progress. Cancel all operations?
-;Color dialog
+
+; Color dialog
 4561=Default
 4562=More colors...
 4563=No color
 4564=Shortcut
 4565=File(s)
 4566=Folder(s)
-4567=Sorry, the help file was not found
+4567=Sorry, the help file was not found.
 4568=Files to compare are not the same type. Compare anyway with: %s
 4569=The file/folder name is not valid
 4570=Show context menu of target item
 4571=Select layout:
+4572=Please drop the files on the drive button
+4573=The name is not valid because some characters are not allowed.
+4574=Open layout %s
+4575=Open favorite %s
+4576=Start favorite tool %s
+4577=Cannot load files!
+4578=Cannot connect to network:
+4579=Add current operation to the queue
+4580=Select favorites set:
+4581=Online help:
+4582=Help file download:
+4583=English
+4584=German
+4585=Other
+4586=Loading content of
+4587=File or folder with the new name "%s" already exists!
+4588=Color schema name:
+4589=Color schema already exists. Overwrite?
+4590=Current color schema saved as "%s"
+4591=No colors saved for the selected layout!
+4592=Delete the color schema file?
+ 
+6001=User canceled entire job
+6002=System canceled entire job
+6003=Need to elevate the process to complete the operation
+
 
 33200=no_translate: Default Columns Title
 33201=Size
@@ -216,11 +258,13 @@
 33213=Folders
 33214=Items
 33215=Size Auto
+33216=Path Length
+
 
 34000=no_translate:  Settings
 34001=General
 34002=Start
-34003=Shell Menu
+34003=Shell menu
 34004=Programs
 34005=Compare folders
 34006=File/folder operations
@@ -243,9 +287,10 @@
 34024=Network
 34025=Settings
 
+
 34100=no_translate: Settings - General
 34101=Language
-34102=Allow only one instance (restart FreeCommander to take effect)
+34102=Allow only one instance (restart FreeCommander to apply)
 34103=Minimize to system tray
 34104=Minimize instead of exiting
 34105=Always show system tray icon
@@ -262,13 +307,19 @@
 34117=Restore Settings
 34118=Delete old settings backup folders
 34119=Confirm before exit
+34120=Check for updates
+34121=Never
+34122=Once a day
+34123=Once a week
+34124=Once a month
+
 
 34150=no_translate: Settings - Network
 34151=Use Windows shell for network loading
 34152=Use FreeCommander for network loading
 34153=Show hidden shares
 34154=Cache server list while running
-34155=Load network in background process when start FreeCommander
+34155=Load network in background process when launch FreeCommander
 
 
 34200=no_translate: Settings - File/Folder operations
@@ -284,15 +335,41 @@
 34210=Use external program:
 34211=Copy
 34212=Move
-34213=Activate drag && drop in the file pane(s)
-34214=Activate drag && drop in the tree
-34215=Show popup menu on left-button drop
+34213=Activate drag && drop in file pane(s)
+34214=Activate drag && drop in tree(s)
+34215=Show popup menu for left-button drag && drop
 34216=New file/folder name suggestion
 34217=Date format:
 34218=Timestamp format:
-34219=Block source and target windows during drag && drop (can be important for big files)
-34220=Tip: Press Ctrl key and start dragging for opposite behavior
+34219=Block source and target panes during drag && drop (can be important for large files)
+34220=Tip: Press Ctrl key when start dragging for opposite behavior
+34221=Copy/Move method when 'Use FreeCommander' is active:  
+34222=FreeCommander method
+34223=Vista method for non-local drives (may be faster)
+34224=Vista method for all drives
+34225=Rename/Create
+34226=Operations queue
+34227=Open queue dialog minimized
+34228=Queue status bar visible
+34229=Always
+34230=Only if any operation exists
+34231=Make Queue button default in operation dialog box
+34232=Use color and font from status bar settings
+34233=Show queue bar directly below status row
+34234=Always perform copy operation for left-button drag && drop
+34235=Operation queue works only if the option "Use FreeCommander" in the General tab is selected.
 
+
+34250=no_translate: Settings - FTP
+34251=Save protocol file as:
+34252=List files in protocol (slow)
+34253=Show file attributes as numbers
+34254=Password for anonymous login:
+34255=Show warning when opening a file larger than:
+34256=KB (0 = no limit)
+34257=Default connection settings
+34258=Current date:
+34259=Define...
 
 
 34300=no_translate: Settings - Quick search
@@ -324,8 +401,8 @@
 34403=Hover time for item select (msec)
 34404=Open file with single-click
 34405=Open folder with single-click
-34406=Sticky selection (NC-mode)
-34407=Enable sticky selection (NC-mode)
+34406=Sticky selection (NC mode)
+34407=Enable sticky selection (NC mode)
 34408=Extend selection with Shift and Ctrl keys
 34409=Select with right-click
 34410=Go to the next item after selecting with spacebar
@@ -349,7 +426,13 @@
 34428=Use text color only
 34429=Use background color only
 34430=Use both colors
-
+34431=Open item (if open file/folder with single-click is enabled)
+34432=Focus item
+34433=Select item: activate selection by cursor dragging
+34434=
+34435=Select item
+34436=By clicking on extension or free space in label
+34437=By clicking on item icon
 
 
 34500=no_translate: Settings - View
@@ -378,6 +461,8 @@
 34523=Optimal size: 8 - 11
 34524=Platform
 34525=Layout
+34526=Change splitter color if content not visible
+
 
 34600=no_translate: Settings - Folder Tabs
 34601=General
@@ -421,7 +506,7 @@
 34644=Character to mark locked tabs
 34645=Maximum length of tab titles (characters)
 34650=File containers folder:
-34651=Remove temporary file containers when exit FreeCommander
+34651=Delete temporary file containers when exit FreeCommander
 34652=Active tab
 34653=Active file container tab
 34654=Inactive tab
@@ -456,8 +541,9 @@
 34709=Condition
 34710=Details view condition
 34711=Folder name mask:
-34712=Example: foto*;*music
-34713=Example: c:\temp;*\fotos
+34712=Example: photo*;*music
+34713=Example: c:\temp;*\photos
+
 
 34800=no_translate: Settings - Status bar
 34801=Wrap when wider than pane
@@ -493,6 +579,8 @@
 34832=%s/%s Item(s) selected
 34833=Created: %s
 34834=Last access: %s
+34835=Single selection in container
+
 
 34900=no_translate: Settings - DOS Prompt
 34901=Show command line
@@ -500,6 +588,28 @@
 34903=Close shell window after command runs 
 34904=Tip: Use Alt+Enter for opposite behavior
 34905=Command line parameters:
+
+
+34940=no_translate: Settings - Shell Menu
+34941=Add '%s' to context menu for
+34942=Open with FreeCommander
+34943=Drives
+34944=Folders
+34945=Files
+34946=Shortcuts
+34947=Open items from context menu in
+34948=Current instance
+34949=New instance
+34950=Load items from context menu in
+34951=Top/Left pane
+34952=Bottom/Right pane
+34953=Active pane
+34954=Inactive pane
+34955=Update registry
+34956=Registry update failed.
+34957=Cannot delete key:
+34958=Open any folder with FreeCommander
+
 
 35100=no_translate: Settings - Drives
 35101=General
@@ -531,6 +641,7 @@
 35127=Show drive hint
 35128=Compute free space for network drives too (can be very slow)
 
+
 35200=no_translate: Settings - Programs
 35201=Filter
 35202=Program
@@ -546,12 +657,14 @@
 35212=2. File to compare
 35213=Focused item - active pane
 35214=Selected items - active pane
+35215=Target file extension
 35231=Editors
 35232=Internal viewers
 35233=Default actions
 35234=External viewers
 35235=File comparers
 35236=Default for Enter key and double-click
+
 
 35300=no_translate: Settings - Compare folders
 35301=Compare folders
@@ -565,7 +678,8 @@
 35309=Show selected items only
 35310=Open dialog box with options 
 35311=and
-35312=Reload both panes before compare
+35312=Refresh both panes before compare
+
 
 35400=no_translate: Settings - Tree
 35401=General
@@ -590,7 +704,7 @@
 35420=Show archive files (.zip, .cab)
 35421=Show links to folders (.lnk)
 35422=Show floppy drives (A:, B:)
-35423=Show removable drives only when media inserted
+35423=Show removable drives only if media inserted
 35424=Show overlay icons (SVN)
 35425=Show lines
 35426=Automatically show selected node
@@ -616,6 +730,13 @@
 35446=Use large icons
 35447=Item height (pixels)
 35448=Auto-resize for main splitter changes
+35449=Keep expanded nodes if tree per tab
+35450=Excluded items
+35451=Name
+35452=Path
+35453=Check items to exclude from the tree:
+35454=Full row select
+35455=Theme off
 
 
 35500=no_translate: Settings - Archiver plugins - Zip
@@ -645,8 +766,9 @@
 35609=Registered
 35610=Fixed
 
+
 35700=no_translate: Settings - File/Folder list - Items color
-35701=Color by attribute
+35701=Color by attribute and timestamp
 35702=Color by file type
 35703=Set color
 35704=Default color
@@ -663,6 +785,10 @@
 35715=Color by folder filter
 35716=Folder filters:
 35717=Specify folder filter...
+35718=Select attributes
+35719=Date modified - not older than
+35720=Only for files 
+
 
 35800=no_translate: Settings - Start program
 35801=Start folders
@@ -682,6 +808,8 @@
 35815=FreeCommander install folder
 35816=Custom folder:
 35817=Current configuration folder:
+35818=FreeCommander reboot is required to use the new settings folder.
+
 
 35900=no_translate: Settings - Archiver plugins - WCX
 35901=Title
@@ -721,6 +849,7 @@
 36002=Show icons in function bar
 36003=Function
 
+
 36100=no_translate: Settings - Thumbnails
 36101=Spacing (pixels)
 36102=Background color:
@@ -733,6 +862,10 @@
 36109=Show overlay icons
 36110=Create thumbnails for text files:
 36111=Example: .log.ini.txt
+36112=Font size:
+36113=No thumbnails for files:
+36114=Example: .psd.tiff.gif
+
 
 36200=no_translate: Settings - Viewer
 36201=Quick viewer
@@ -760,6 +893,7 @@
 36223=Up
 36224=Down
 
+
 36300=no_translate: Settings - Address bar
 36301=General
 36302=Color/Font
@@ -774,6 +908,9 @@
 36311=Background transparent for inactive pane
 36312=Text Color
 36313=Font
+36314=Show history menu when clicking on empty area
+36315=Enable autocomplete
+
 
 36400=no_translate: Settings - File/Folder list
 36401=General
@@ -843,6 +980,9 @@
 36605=Highlight
 36606=Hot track
 36607=Use system colors
+36608=Button
+36609=Button symbol
+
 
 36650=no_translate: Settings - Popup menu - View condition
 36651=No condition
@@ -851,14 +991,18 @@
 36654=Flat mode
 36655=File container
 
+
 36670=no_translate: Settings - Popup menu - Status bar - New
 36671=For multi-selection
 36672=For single selection
 36673=For single selection flat mode
+36674=For single selection in container
+
 
 36680=no_translate: Settings - Popup menu - External program
 36681=Seek program...
 36682=Parameters
+
 
 36800=no_translate: Dialog Custom Columns
 36801=Columns
@@ -875,6 +1019,13 @@
 36812=Down
 36813=ASC
 36814=DESC
+36815=Data type
+36816=Text
+36817=Number
+36818=Date
+36819=By item name length
+36820=Fill remaining space
+
 
 37000=no_translate: Dialog Status Info Details
 37001=Status bar fields
@@ -929,7 +1080,6 @@
 37135=Relative path
 
 
-
 38000=no_translate: Dialog Toolbar Customizer
 38001=Define action toolbars
 38002=Toolbars
@@ -969,7 +1119,10 @@
 38037=Address
 38038=File container
 38039=Description
-38040=Use flat images (20x20 and 32x32) (requires restart)
+38040=Use flat icons (size: 20x20, 32x32)  (restart FreeCommander to take effect)
+38041=Show basket icon
+38042=Left border
+38043=Right border
 
 
 38900=no_translate: Action Categories
@@ -1007,8 +1160,10 @@
 39016=All files
 39017=Popup menu actions
 
+
 40000=no_translate: Dialog Shell Details
 40001=Choose Details
+
 
 41000=no_translate: Dialog Shortcuts Define
 41001=Define keyboard shortcuts
@@ -1021,11 +1176,12 @@
 41008=Save shortcuts list...
 41009=This new shortcut is already assigned to another command.
 41010=Would you like to assign it anyway?
-41011=Would you like to replace the current shortcut with the new one?
+41011=Would you like to remove the current shortcut and assign the new one?
 41012=This command already has a shortcut assigned.
 41013=This shortcut is not available.
 41014=Not assigned
 41015=Registered global shortcuts:
+
 
 42000=no_translate: Dialog Select Items
 42001=Select group
@@ -1038,6 +1194,7 @@
 42020=Shrink selection
 42021=Pattern:
 42022=Example
+
 
 43000=no_translate: Dialog Tab Properties
 43001=Tab Properties
@@ -1059,6 +1216,7 @@
 43017=Remove all colors
 43018=Always use the colors - for active tab too
 
+
 44000=no_translate: Dialog Rename
 44001=Rename
 44002=Original name
@@ -1066,9 +1224,12 @@
 44004=New extension
 44005=Use only one field
 
+
 45000=no_translate: Dialog Password Input
 45001=Password needed
 45002=Enter password:
+45003=Enter username:
+
 
 46000=no_translate: Dialog Confirm Overwrite
 46001=Confirm overwrite
@@ -1088,6 +1249,8 @@
 46015=in  %s
 46016=Size:  %s bytes
 46017=Modified:  %s
+46018=from %s
+
 
 47000=no_translate: Dialog Confirm Question
 47001=Yes
@@ -1106,6 +1269,8 @@
 48007=Reusable filters
 48008=&Define...
 48009=Temporary filter
+48010=Date modified:
+
 
 49000=no_translate: Dialog Define Filter
 49001=Define filter
@@ -1133,6 +1298,7 @@
 49023=File size
 49024=Min:
 49025=Max:
+49026=Older than
 
 
 50000=no_translate: Dialog Attributes/Timestamp
@@ -1156,7 +1322,7 @@
 50018=Target folder:
 50019=More options
 50020=Pause
-50021=Reload
+50021=Refresh
 50022=Preview changes
 50023=Auto-close on successful operation
 50024=Auto-close on canceled operation
@@ -1168,12 +1334,14 @@
 50030=Path
 50031=%d File(s), %d Folder(s)
 50032=Set attributes/timestamps operation in progress.
-50033=Do you want to cancel the operation?
+50033=Cancel the operation?
 50034=%d error(s)
 50035=Error loading data
 50036=Reading files: %d
 50037=Defined filter
 50038=Positive or negative values
+50039=Created from modified
+50040=Modified from created
 
 
 51000=no_translate: Dialog Copy/Move Confirm (Win)
@@ -1188,7 +1356,7 @@
 51009=from
 51010=Target
 51011=Use current folder
-51012=auto-rename target file
+51012=Auto-rename target file
 51013=Always overwrite without prompt
 51014=Favorite folder
 
@@ -1204,7 +1372,7 @@
 52008=Delete all
 52009=Attribute: Read-Only
 52010=Attribute: System/Hidden
-52011=in  %s
+52011=from  %s
 52012=Size:  %s bytes
 52013=Modified:  %s
 52014=Skip
@@ -1222,6 +1390,7 @@
 ;53007=Name
 ;53008=Active pane:
 ;53009=Inactive pane:
+
 
 53020=no_translate: Dialog Favorite Folders
 53021=Favorite items
@@ -1253,8 +1422,8 @@
 53047=Open all in tabs
 53048=Open all in tabs - close all current tabs first
 53049=Close
-53050=Left/top pane:
-53051=Right/bottom pane:
+53050=Top/Left pane:
+53051=Bottom/Right pane:
 53052=Favorite folder - top/left pane
 53053=Favorite folder - bottom/right pane
 53054=Define by pane position
@@ -1263,6 +1432,21 @@
 53057=View:
 53058=Sort ascending
 53059=Sort descending
+53060=Edit favorites sets
+53061=Hotkey is already assigned
+53062=Font color
+
+
+53200=no_translate: Dialog Favorites Sets
+53201=Favorites sets
+53202=Add new item
+53203=Rename
+53204=Remove from the list
+53205=Move up
+53206=Move down
+53207=Title
+53208=The basic favorites set cannot be deleted.
+53209=New favorites set
 
 
 54000=no_translate: Dialog Delete Operation
@@ -1281,7 +1465,7 @@
 54013=Example (wildcard): *.txt;a*.doc  |  Example (regex): [0-9]*_[0-9]*\.bmp
 54014=Delete read-only files
 54015=Pause
-54016=Reload
+54016=Refresh
 54017=Auto-close on successful operation
 54018=Auto-close on canceled operation
 54019=Auto-minimize when starting operation
@@ -1294,7 +1478,7 @@
 54026=Error loading data
 54027=Reading files: %d
 54028=Delete operation is in progress.
-54029= Do you want to cancel the operation?
+54029=Cancel the operation?
 54030=%d error(s)
 54031=Waiting for internal copy
 54032=Folder is not empty
@@ -1309,6 +1493,7 @@
 54041=Preparing deletion...
 54042=Show errors only
 54043=Flat mode
+54044=Use delete method only available in Vista and later
 
 
 55000=no_translate: Dialog Define Favorite Toolbars
@@ -1374,8 +1559,8 @@
 55224=Toolbar
 55225=Show in
 55226=Separate for each selected item
-55227=Delimiter character for selected items (space is default)
-55228=Enclose each selected item with quotes
+55227=Delimiter character for selected items (default is space)
+55228=Enclose each selected item with double-quote
 
 
 56000=no_translate: Search Form
@@ -1395,7 +1580,7 @@
 56014=View - external viewer
 56015=Edit
 56016=Open
-56017=Open location
+56017=Open location in active pane
 56018=Remove from the list
 56019=Close
 56020=Properties...
@@ -1434,7 +1619,13 @@
 56053=Options
 56054=Export to file container
 56055=Auto-hide search parameters when search ends
-56056=Open dialog box on last used position
+56056=Open dialog box with last used position
+56057=Run in external process
+56058=Run in external process as admin
+56059=Use consistent pane for 'Open location' function
+56060=Open location in top/left pane
+56061=Open location in bottom/right pane
+56062=Search aborted
 
 56201=Location
 56202=Time/Size/Attributes
@@ -1494,6 +1685,12 @@
 56256=Active pane: paths from all tabs
 56257=Inactive pane: paths from all tabs
 56258=Paths from all tabs
+56259=Use * for checking files with unknown extensions
+56260=Use for:
+56261=this
+56262=this and subfolders
+56263=subfolders
+56264=Search in Office xml files (docx, xlsx, odt)
 
 
 57000=no_translate: Dialog Copy/Move Operation FC
@@ -1524,11 +1721,11 @@
 57025=Preserve file/folder timestamps
 57026=Pause
 57027=Configure...
-57028=Reload
+57028=Refresh
 57029=Auto-close on successful operation
 57030=Auto-close on canceled operation
 57031=Auto-minimize when starting operation
-57032=Perform operation using unbuffered I/O (recommended for huge file transfers) 
+57032=Use unbuffered I/O (recommended for huge file transfers) 
 57033=Unbuffered I/O size limit (GB)
 57034=Save dialog box options for operation without dialog box
 57035=Name
@@ -1545,7 +1742,7 @@
 57046=Error loading data
 57047=Reading files:
 57048=%s operation is in progress.
-57049=Do you want to cancel the operation?
+57049=Cancel the operation?
 57050=Password needed
 57051=Enter password:
 57052=Confirm password:
@@ -1565,6 +1762,15 @@
 57066=You will be not asked again in this session if you answer 'yes'.
 57067=Archiver options
 57068=Source and target are the same - operation is not supported
+57069=Auto-rename copied item
+57070=Preparing operation...
+57071=Plain view - copy/move may be slower
+57072=Create hard link if possible in copy operation
+57073=Do not copy the security attributes of the item
+57074=Move ACLs across volumes
+57075=Show errors only
+57076=Expert options
+
 
 58000=no_translate: Viewer Form
 58001=File
@@ -1578,7 +1784,7 @@
 58009=Properties
 58010=Save as...
 58011=Context menu
-58012=Reload
+58012=Refresh
 58013=Print...
 58014=Print preview...
 58015=Exit
@@ -1612,8 +1818,8 @@
 58043=Zoom out
 58044=Decrease size
 58045=Original size
-58046=Rotate clockwise 90Â°
-58047=Rotate counterclockwise 90Â°
+58046=Rotate clockwise 90°
+58047=Rotate counterclockwise 90°
 58048=Text
 58049=Binary text
 58050=Hex
@@ -1653,8 +1859,32 @@
 58084=UTF-8
 58085=No preview available
 58086=Windows preview
-58598=as Windows preview
-58599=Starting with Windows Vista
+58087=Image
+58088=Play
+58089=Pause
+58090=Stop
+58091=Save...
+58092=Print preview...
+58093=Frame:
+58094=Thumbnail size
+58095=Loading error...
+58096=File format is not supported.
+58097=Show EXIF info
+
+58200=VLC Player (must be installed)
+58201=Play
+58202=Pause playback
+58203=Stop
+58204=Next frame
+58205=Take snapshot
+58206=Speed
+58207=Next chapter
+58208=Previous chapter
+58209=Mute
+58210=Unmute
+58211=Elapsed time
+58212=Remaining time
+58213=Can not find installed VLC Player (www.videolan.org)
 
 
 58401=Attributes
@@ -1710,10 +1940,10 @@
 58538=Tab Size
 58539=Auto-fit binary
 58540=Auto-fit hex
-58541=Auto-reload
-58542=Auto-reload on changes
+58541=Auto-refresh
+58542=Auto-refresh on changes
 58543=Beep on changes
-58544=Position at end after reload
+58544=Position at end after refresh
 58545=Open dialog box after last search match
 58546=Gutter
 58547=Show gutter
@@ -1767,6 +1997,8 @@
 58595=Program path:
 58596=File extensions:
 58597=Seek program...
+58598=as Windows preview
+58599=Starting with Windows Vista
 
 
 58950=no_translate: Viewer "Go to" dialog
@@ -1780,10 +2012,9 @@
 58958=Selection end
 
 
-
-59000=no_translate: Dialog Compute MD5-Checksums
-59001=Compute MD5 Checksums
-59002=Verify MD5 Checksums
+59000=no_translate: Dialog Compute Checksums
+59001=Compute %s-Checksums
+59002=Verify %s-Checksums
 59003=Selected item(s):
 59004=from:
 59005=Operation
@@ -1793,11 +2024,11 @@
 59009=Include only files of type:
 59010=Example:
 59011=Save checksums
-59012=Create separate MD5 checksum file for each selected file
+59012=Create separate %s checksum file for each selected file
 59013=Compare with checksum:
 59014=Use regular expression (regex)
 59015=Defined filter
-59016=Reload
+59016=Refresh
 59017=Copy to clipboard
 59018=Show errors only
 59019=Auto-close on successful operation
@@ -1813,13 +2044,16 @@
 59029=Reading files:
 59030=Name
 59031=Error message
-59032=MD5
+59032=
 59033=Path
 59034=Preparing operation...
 59035=%s Error(s)
 59036=Overwrite?
 59037=Errors occurred. Please check the error column in the file list.
-59038=Please select only MD5 checksum files.
+59038=Please select only MD5 or SHA checksum files.
+59039=Use UTF-8 encoding when saving as file
+59040=Checksum method:
+
 
 60000=no_translate: Quick Starter Form
 60001=Quick starter
@@ -1847,6 +2081,7 @@
 60023=Edit
 60024=Perform
 60025=Options
+
 
 61000=no_translate: Multi Rename Form 
 61001=Multi-Rename
@@ -1895,7 +2130,7 @@
 61105=Search and replace
 61106=Search for:
 61107=Replace with:
-61108=Regular expression
+61108=Regular expression (regex)
 61109=Replace all occurrences
 61110=Case-sensitive
 61111=Counter
@@ -1906,7 +2141,7 @@
 61116=With subfolders
 61117=Only files
 61118=Rename
-61119=Reload
+61119=Refresh
 61120=Close
 61121=Settings
 61122=Profiles
@@ -1967,14 +2202,14 @@
 61185=Comment
 61186=Artist
 61187=Album
-61188=Track number - %d digit(s)
+61188=Track number (digits: %d)
 61189=Year
 61190=Genre
 61191=Comment
 61192=Composer
 61193=Encoder
 61194=Language
-61195=Bitrate
+61195=Bit rate
 61196=Sampling rate
 61197=Channels (num)
 61198=Channels
@@ -1991,16 +2226,17 @@
 61209=Date digitized
 61210=Camera Name
 61211=Camera Model
+61212=Shutter speed
 
 61220=File name
-61221=Rename operation is in progress.
-61222=Do you want to cancel the operation?
+61221=Rename operation in progress.
+61222=Cancel the operation?
 61223=%d error(s)
 61224=File/folder with this name already exists
 61225=Name - first x characters
 61226=Name - last x characters
 61227=Globally Unique Identifier (GUID)
-61228=MD5 checksum
+61228=
 61229=Please press 'Preview' first.
 61230=Reset
 61231=Preview
@@ -2043,32 +2279,37 @@
 62104=[Sa]        match S, s, a, and A
 62105=[!S]         match anything except S or s
 62106=Examples: *.txt; [0-9]*.tmp;" *.png"
-62107=Begin mask with -[]: to use [] as literals
-62150=Wildcard Search:
+62107=Begin mask with "-[]:" if you want use [] as literals
+62150=Wildcard Searches:
 62151=*             match zero or more characters
 62152=?             match any single character
-62153=;              multiple item divider
-62154=-*.txt        exclude all *.txt files 
-62155=--*.*          include files starting with '-'
+62153=;              multiple items divider
+62154=-*.txt       exclude all *.txt files 
+62155=--*.*        include files starting with '-'
 62156=\*docs      include *docs folders
-62157=-\*temp     exclude *temp folders
-62158=Only one type possible: include or exclude
+62157=-\*temp   exclude *temp folders
+62158=Only use one type: include or exclude
 62159=|today      from 00:00 until now
 62160=|hour        not older than one hour
 62161=|day          not older than 24 hours
-62162=|week        not older than 7 days
-62163=|month     not older than 30 days
+62162=|week       not older than 7 days
+62163=|month    not older than 30 days
 62164=|year         not older than 365 days
 62165=-|xxx          older than
-62166=>3000        greater than 3000 bytes
-62167=>kb3         greater than 3 KB
-62168=>mb3        greater than 3 MB
-62169=>gb3         greater than 3 GB
-62170=<3000        smaller than 3000 bytes
-62171=<kb3         smaller than 3 KB
-62172=<mb3        smaller than 3 MB
-62173=<gb3         smaller than 3 GB
-
+62166=>3000      larger than 3000 bytes
+62167=>kb3        larger than 3 KB
+62168=>mb3      larger than 3 MB
+62169=>gb3       larger than 3 GB
+62170=<3000      smaller than 3000 bytes
+62171=<kb3        smaller than 3 KB
+62172=<mb3      smaller than 3 MB
+62173=<gb3        smaller than 3 GB
+62174=:D           has Directory attribute
+62175=:H           has Hidden attribute
+62176=:DH        has Directory && Hidden attributes
+62177=Any combination of A,H,S,R,D,E,C is possible
+62178=|hour*5     not older than five hours
+62179=|month*3     not older than 90 days
 
 
 63000=no_translate: Dialog About
@@ -2083,8 +2324,9 @@
 63009=License agreement
 63010=Copy
 
+
 64000=no_translate: Dialog Screen Snapshot
-64001=Capture Screenshot
+64001=Capture screenshot
 64002=Capture area
 64003=Full desktop - all monitors
 64004=Desktop - current monitor
@@ -2101,7 +2343,7 @@
 64015=File name:
 64016=Destination folder:
 64017=Create subfolder with current date
-64018=Hide FreeCommander window while creating screenshot
+64018=Hide FreeCommander window when capturing screenshot
 64019=Global hotkey
 64020=Capture
 64021=GIF
@@ -2109,6 +2351,7 @@
 64023=
 64024=Open in image editor:
 64025=Seek program...
+
 
 65000=no_translate: Dialog Custom Style
 65001=Custom Style
@@ -2142,6 +2385,13 @@
 65029=Vertical: box
 65030=Square: box
 65031=Large square: box
+65032=General
+65033=Menu
+65034=Menu icon bar
+65035=Active item
+65036=Inactive item
+65037=Line
+
 
 66000=no_translate: Synchronize Form
 66001=Synchronize
@@ -2244,6 +2494,7 @@
 66100=File list color if filters set:
 66101=Remove all filters
 
+
 66500=no_translate: Synchronize Dialog
 66501=Synchronize
 66502=Top/Left to Bottom/Right
@@ -2262,6 +2513,8 @@
 66515=Backup of the bottom/right pane
 66516=Bottom/Right folder
 66517=Encrypt when synchronizing with archive file
+66518=copy and auto-rename target item
+
 
 67000=no_translate: WCX operations
 67001=Extract operation is in progress
@@ -2269,6 +2522,7 @@
 67003=Canceled by user
 67004=Cannot auto-rename "%s"
 67005=Create folder failed "%s"
+
 
 67500=no_translate: Dialog Layouts
 67501=Layouts edit
@@ -2287,14 +2541,14 @@
 67514=Save current layout
 67515=Layout name:
 67516=Overwrite existing layout?
+67517=Save color schema
+67518=Set color schema only
+67519=Import color schema
+67520=Export color schema
 
-67800=no_translate: nagscreen
-67801=Thanks for using FreeCommander.
-67802=Please consider donating to help support the further development of FreeCommander.
-67803=Donation
 
 67900=no_translate: Dialog Print Folder
-67901=Make folder list
+67901=Save file/folder list
 67902=Selected item(s):
 67903=from:
 67904=Operation
@@ -2302,23 +2556,23 @@
 67906=Settings
 67907=Include files and folders in subfolders
 67908=Include only files of this type:
-67909=Example (wildcard): *.txt;a*.doc  |  Example (regex): [0-9]*_[0-9]*\.bmp
+67909=Sample: *.txt;a*.doc | <RegExp>: [0-9]*_[0-9]*\.bmp
 67910=Output file
 67911=New file
 67912=Append to file
 67913=Use profile
 67914=Pause
-67915=Reload
-67916=Auto-close on successful operation
-67917=Auto-close on canceled operation
+67915=Refresh
+67916=Auto-close for successful operation
+67917=Auto-close for cancelled operation
 67918=Defined filter
 67919=Name
 67920=Error message
 67921=Path
-67922=%d File(s), %d Folder
+67922=%d File(s), %d Folder(s)
 67923=Data loading error
 67924=Reading files: %d
-67925=List creation operation is in progress.
+67925=Folder/file list creation in progress.
 67926=Cancel the operation?
 67927=%d error(s)
 67928=Folder:
@@ -2331,6 +2585,270 @@
 67935=Default_Profile (tab separated fields)
 67936=Default_Profile (fixed length fields)
 67937=Overwrite the file?
+
+
+68000=no_translate: Dialog FTP Connection
+68001=FTP connection
+68002=Connection
+68003=Advanced
+68004=Transfer
+68005=Name (if you want to save):
+68006=Server
+68007=Host address:
+68008=Port:
+68009=Remote path:
+68010=Local path:
+68011=Login
+68012=Use anonymous login
+68013=User name:
+68014=Password:
+68015=Connect
+68016=Proxy
+68017=Server:
+68018=Port:
+68019=Username:
+68020=Password:
+68021=Type:
+68022=None
+68023=UserSite
+68024=Site
+68025=Open
+68026=UserPass
+68027=Transparent
+68028=Initial FTP commands:
+68029=Time zone difference in minutes:
+68030=Timeout detection in seconds:
+68031=Show hidden files
+68032=Transfer type
+68033=Type:
+68034=Binary
+68035=ASCII
+68036=Auto-detect
+68037=Auto-detect will use ASCII for these file extensions:
+68038=TLS/SSL
+68039=Mode:
+68040=None
+68041=Automatic
+68042=Implicit
+68043=Explicit
+68044=TLS
+68045=SSL 3.0
+68046=SSL 2.0
+68047=Use secure channel
+68048=Use passive mode for transfer
+68049=Transfer mode:
+68050=Block
+68051=Compressed
+68052=Stream
+68053=Deflate
+68054=Throughput upper limit in KB/s (0 = no limit):
+68055=Batch size in bytes:
+
+
+68500=no_translate: Dialog FTP Download
+68501=Download
+68502=Upload
+68503=Selected item(s):
+68504=from:
+68505=Operation
+68506=Files
+68507=Settings
+68508=Target:
+68509=Use current folder
+68510=Include only files of this type:
+68511=Sample:
+68512=For overwrite decision:
+68513=Ask the user
+68514=Overwrite all
+68515=Skip all
+68516=Overwrite older
+68517=Overwrite smaller
+68518=Auto-rename target item
+68519=Overwrite hidden/system items
+68520=Overwrite read only items
+68521=Preserve file/folder timestamps
+68522=Pause
+68523=Configure...
+68524=Refresh
+68525=Auto-close on successful operation
+68526=Auto-close on cancelled operation
+68527=Auto-minimize when starting the operation
+68528=Defined filter
+68529=Name
+68530=Progress
+68531=Size
+68532=Error message
+68533=Path
+68534=Directory creation failed for %s
+68535=Download operation in progress.
+68536=Upload operation in progress.
+68537=%d file(s), %d folder(s)
+68538=Data loading error
+68539=Waiting for starting operation on: %d File(s) %d Folder(s)
+68540=Reading files:
+68541=Speed: %s/s
+68542=Remaining:
+68543=%d error(s)   %d skipped
+68544=%s operation is in progress.
+68545=Cancel the operation?
+
+
+69000=no_translate: Dialog FTP Certificate
+69001=The server presented a certificate. Trust this certificate?
+69002=Friendly name
+69003=Issuer email address
+69004=Issued by
+69005=Issued to
+69006=Valid from
+69007=Valid to
+69008=Serial number
+69009=Always trust this certificate
+
+
+69050=no_translate: FTP popup menu
+69051=FTP connect
+69052=Delete FTP connection
+69053=Properties...
+
+
+69100=no_translate: FTP operations
+69101=File size is bigger than %s.
+69102=Do you want to temporarily download the file?
+69103=Delete the FTP connection definition?
+
+
+69200=no_translate: Dialog FTP Attributes
+69201=FTP Attributes
+69202=Selected item(s): 
+69203=from:
+69204=Operation
+69205=Files
+69206=Settings
+69207=Include files and folders in subfolders
+69208=Include only files of this type:
+69209=Sample: *.txt;a*.doc | <RegExp>: [0-9]*_[0-9]*\.bmp
+69210=Owner rights
+69211=Group rights
+69212=Other (public) rights
+69213=Read
+69214=Write 
+69215=Run
+69216=Numeric value:
+69217=Pause
+69218=Auto-close on successful operation
+69219=Auto-close on cancelled operation
+69220=Auto-minimize when starting the operation
+69221=Show error messages
+69222=Name
+69223=Error message
+69224=Path
+69225=%d File(s), %d Folder(s)
+69226=Data loading error
+69227=Reading files: %d
+69228=Set attributes operation in progress.
+69229=Cancel the operation?
+69230=%d error(s)
+69231=Aborted by user
+
+
+69500=no_translate: Operation Queue Form
+69501=Operations Queue
+69502=Operation
+69503=Source
+69504=Target
+69505=Remove the operation from the queue and show operation dialog box?
+69506=Remove the operation from the queue and cancel operation dialog box?
+69507=Copy
+69508=Move
+69509=Pack
+69510=Unpack
+69511=Download
+69512=Upload
+69513=Delete
+69514=Delete to basket
+69515=Wipe files
+69516=Set attributes
+69517=Set FTP attributes
+69518=Save file/folder list
+69519=Checksum
+69520=Show dialog box with all items in the operation queue (only if the queue is not empty)
+69521=Remove operation from the queue and run the operation
+69522=Remove operation from the queue and cancel the operation
+69523=Split file
+69524=Combine files
+
+
+69700=no_translate: Dialog split/combine file(s)
+69701=Split file
+69702=Combine files
+69703=Selected item(s):
+69704=from:
+69705=Operation
+69706=Files
+69707=Settings
+69708=Target
+69709=Use current folder
+69710=How to split
+69711=Number of files
+69712=Bytes per file
+69713=Create BAT file to combine files
+69714=Split control file
+69715=Target file name
+69716=Target file size
+69717=CRC32
+69718=Auto-close for successfully operation
+69719=Auto-close for canceled operation
+69720=Save CRC32 checksum in control file
+69721=Calculate CRC32 checksum of the target file and compare with checksum saved in control file
+69722=Pause
+69723=Size:
+69724=Split file: please select only one file for the operation
+69725=Combine files: please select one file with the extension %s or %s
+69726=The split control file is invalid.
+69727=One of the files to combine does not exist:
+69728=%d File(s), %d Folder(s)
+69729=Data loading error
+69730=Name
+69731=Error message
+69732=CRC-Checksum
+69733=Path
+69734=Can not find target folder:
+69735=Preparing operation...
+69736=%s Error(s)
+69737=Calculate file checksum...
+69738=Creating %s
+69739=Created: %s
+69740=Created file has wrong CRC32 checksum (target/source): %s
+69741=Checksum CRC32 (target/source): %s
+69742=*** Error: %s
+69743=Processing %s
+69744=File created: %s
+69745=File size (target/source): %s
+69746=BAT file cannot be created: %s
+69747=Split control file cannot be created: %s
+69748=Operation canceled
+69749=Created file has wrong size: %s
+69750=Source file (%s) does not exist
+69751=Define destination paths for the part files
+69752=Define source paths for the part files
+69753=Existing target file
+69754=Overwrite
+69755=Rename
+69756=Cannot rename target file: %s
+69761=Part files paths
+69762=Part #
+69763=Path
+69764=Please define paths only for these part files that should be stored in other locations.
+69765=Please define paths only for these part files that should be loaded from other locations.
+
+
+9900=no_translate: Form version checker
+69901=New FreeCommander version is available:
+69902=Changes:
+69903=Downloads
+69904=Full list of changes
+69905=Access donor version
+
 
 
 [ShortCutsTxt]
@@ -2362,16 +2880,27 @@ actDirOpenInOtherPaneNewTab=Open folder: In inactive pane (new tab); Open curren
 actDirOpenInSamePaneNewTab=Open folder: In active pane (new tab); Open curret folder in new tab of active pane
 actDirOpenLeftOnRight=Open top/left folder on bottom/right; Open current top/left folder in bottom/right pane
 actDirOpenRightOnLeft=Open bottom/right folder on top/left; Open current bottom/right folder in top/left pane
-actDirPrint=Make folder/file list...; Make file list and save it as file
+actDirPrint=Save file/folder list...; Create file/folder list and save it as file
 actDirRoot=Root; Go up to root folder
 actDirSize=Show folder sizes; Compute space occupied by folders
 actDirSizeSelected=Size of selected folders; Compute space occupied by selected folders
-actDirSortDate=Sort: &Date/Time; Sort items by last modified date
-actDirSortName=Sort: &Name; Sort items by name
-actDirSortNo=Sort: Unsorted; Show items unsorted
-actDirSortSize=Sort: &Size; Sort items by size
-actDirSortTyp=Sort: &Type; Sort items by type
-actDirSortExtension=Sort: Extension; Sort items by extension
+actDirSortDate=Sort active pane: &Date/Time; Sort active pane items by last modified date
+actDirSortName=Sort active pane: &Name; Sort active pane items by name
+actDirSortNo=Sort active pane: Unsorted; Show active pane items unsorted
+actDirSortSize=Sort active pane: &Size; Sort active pane items by size
+actDirSortTyp=Sort active pane: &Type; Sort active pane items by type
+actDirSortExtension=Sort active pane: Extension; Sort active pane items by extension
+actDirSortDate_Left=Sort top/left pane: &Date/Time; Sort top/left pane items by last modified date
+actDirSortName_Left=Sort top/left pane: &Name; Sort top/left pane items by name
+actDirSortSize_Left=Sort top/left pane: &Size; Sort top/left pane items by size
+actDirSortTyp_Left=Sort top/left pane: &Type; Sort top/left pane by type
+actDirSortExtension_Left=Sort top/left pane: Extension; Sort top/left pane items by extension
+actDirSortDate_Right=Sort bottom/right pane: &Date/Time; Sort bottom/right pane items by last modified date
+actDirSortName_Right=Sort bottom/right pane: &Name; Sort bottom/right pane items by name
+actDirSortSize_Right=Sort bottom/right pane: &Size; Sort bottom/right pane items by size
+actDirSortTyp_Right=Sort bottom/right pane: &Type; Sort bottom/right pane items by type
+actDirSortExtension_Right=Sort bottom/right pane: Extension; Sort bottom/right pane items by extension
+
 actDirSortSwitchToNext=Sort - switch; Switch between sorts
 actDirSortFoldersLikeFiles=Sort folders like files; Sort folders and files together
 actDirSortFoldersLikeFilesExceptName=Sort folders like files - except for name; Sort folders like files, except for name
@@ -2385,15 +2914,7 @@ actDirGoToMyDocs=My documents; Open My Documents folder in active pane
 actDirHistNext=History next; Next item in history
 actDirHistPrev=History back; Previous item in history
 actDirQuickFilter=Quick filter; Set input focus in quick filter field
-actDirQuickFilterClear=Quick filter off; Deactivate quick filter 
-actDirGoToEdit=Edit path; Edit path in address bar
-actDirGoToEditFromClipboard=Edit address from clipboard; Copy clipboard to address bar and start editing
-actDirOpenControls=Control Panel; Open Control Panel
-actDirOpenDesktop=Desktop; Open desktop
-actDirOpenRecycleBin=Recycle Bin; Open Recycle Bin
-actDirOpenNetwork=Network; Open list of available network folders
-actDirOpenMyComputer=My Computer; Open My Computer folder
-actDirLinkedBrowsing=Link panes; Select and open same items in inactive pane when displaying the same folders
+actDirQuickFilterClear=Quick filter off; Deactivate quick filter
 actDirQuickFilterSet1=Quick filter 1; Set predefined quick filter 1
 actDirQuickFilterSet2=Quick filter 2; Set predefined quick filter 2
 actDirQuickFilterSet3=Quick filter 3; Set predefined quick filter 3
@@ -2403,8 +2924,16 @@ actDirQuickFilterSet6=Quick filter 6; Set predefined quick filter 6
 actDirQuickFilterSet7=Quick filter 7; Set predefined quick filter 7
 actDirQuickFilterSet8=Quick filter 8; Set predefined quick filter 8
 actDirQuickFilterSet9=Quick filter 9; Set predefined quick filter 9
-actDirQuickFilterPredefinedPopupMenu=Quick filter popup menu; Show popup menu with predefined quick filters
-
+actDirQuickFilterPredefinedPopupMenu=Quick filter popup menu; Shows popup menu with predefined quick filters
+actDirGoToEdit=Edit path; Edit path in address bar
+actDirGoToEditFromClipboard=Paste path from clipboard and edit; Copy clipboard contents to address bar and start editing
+actDirGoToEditFromClipboardAndOpen=Paste path from clipboard and open; Copy clipboard contents to address bar and refresh pane
+actDirOpenControls=Control Panel; Open Control Panel
+actDirOpenDesktop=Desktop; Open desktop
+actDirOpenRecycleBin=Recycle Bin; Open Recycle Bin
+actDirOpenNetwork=Network; Open list of available network folders
+actDirOpenMyComputer=My Computer; Open My Computer folder
+actDirLinkedBrowsing=Link panes; Select and open same items in inactive pane when displaying the same folders
 
 actDosPromptGoTo=Go to Command Prompt; Switch between file list and DOS command prompt line
 actDosPromptHistDel=Clear history for Command Prompt; Clear history items for DOS command prompt line
@@ -2457,8 +2986,9 @@ actExtrSettingsRestore=Restore settings...; Restore saved settings to current lo
 actExtrShortCuts=D&efine keyboard shortcuts...; Edit keyboard shortcuts 
 actExtrFavoriteToolsEdit=Edit favorite tools...; Edit favorite tools
 actExtrFavoriteTools=Favorite tools; Show popup menu of favorite tools
+actExtrFtpNewConnection=FTP connection...; Show dialog box to define new FTP connection
 actExtrLanguageToggle=Switch language; Switch between native and English language
-actExtrLanguageReload=Reload language; Reload language text 
+actExtrLanguageReload=Reload language; Reload language file 
 actExtrLanguagePrg=Use internal program language; Use internal program language instead of external file 
 actExtrQuickStarter=Quick starter...; Open quick starter dialog box and activate last used repository
 actExtrQuickStarter1=Quick starter 1...; Open quick starter dialog box and activate repository 1
@@ -2466,7 +2996,7 @@ actExtrQuickStarter2=Quick starter 2...; Open quick starter dialog box and activ
 actExtrQuickStarter3=Quick starter 3...; Open quick starter dialog box and activate repository 3
 actExtrQuickStarter4=Quick starter 4...; Open quick starter dialog box and activate repository 4
 actExtrQuickStarter5=Quick starter 5...; Open quick starter dialog box and activate repository 5
-actExtrToolbarCustomize=Customize toolbars...; Customize toolbars
+actExtrToolbarCustomize=Customize action toolbars...; Customize action toolbars
 actExtrToolbarLock=Lock toolbars; Lock toolbars
 actExtrWinEHook=Launch FreeCommander with Win+E; Redirect Win+E key to open FreeCommander instead of Windows Explorer
 actExtrVisualStyleEdit=Edit style...; Edit visual style
@@ -2490,8 +3020,8 @@ actFileEdit=&Edit; Edit selected files
 actFileEditNew=Edit new; Open file editor to edit a new file
 actFileFind=Searc&h in folders...; Search for files/folders. Performed by Windows.
 actFileFindZip=Search...; Search for files/folders. Performed by FreeCommander.
-actFileMD5=MD5: Compute MD5 checksums...; Compute MD5 checksums for selected items
-actFileMD5Verify=MD5: Verify MD5 checksums...; Verify MD5 checksums from selected MD5 files
+actFileMD5=CRC: Compute checksums...; Compute MD5 or SHA checksums for selected items
+actFileMD5Verify=CRC: Verify checksums...; Verify checksums from selected MD5 or SHA files
 actFileMove=Move: &Move; Move selected items. Performed according to settings.
 actFileMoveDlg=Move: &Move with dialog...; Move selected items with dialog box. Performed according to settings.
 actFileMoveFc=Move: FC-Move; Move selected items. Performed by FreeCommander.
@@ -2502,6 +3032,7 @@ actFileRename=Rename: &Rename; Rename selected items
 actFileRenameMulti=Rename: &Multi-Rename...; Open Multi-Rename window
 actFileShred=Wipe...; Securely delete selected items
 actFileSplit=&Split...; Split selected file into multiple parts
+actFileCombine=Combine...; Combines split files into one large file
 actFileUnzip=&Extract...; Extract selected items from archive file
 actFileView=Vie&w; View selected files in internal file viewer
 actFileViewEx=Vie&w external; View selected files in external file viewer
@@ -2517,13 +3048,14 @@ actFileExit=Exit; Exit FreeCommander
 actHelpIndex=Contents; Show help
 actHelpShortcutsList=Keyboard shortcuts (in browser)...; Show keyboard shortcuts in browser
 actHelpOnline=Online help (in browser)...; Open online help in browser 
+actHelpFaqOnline=Online FAQ (in browser)...; Open online FAQ site in browser
 
 actViewAutoSizeColumns=Auto-resize columns; Set column width automatically in Details view
 actViewDetails=&Details; Display detail information for all items
-actViewDetailsSettings=Profile settings...; Open settings dialog box for column profiles
+actViewDetailsSettings=Edit profiles...; Open dialog box to add, edit, and remove column profiles
 actViewDetailsAddColumns=Details: Add/Remove columns...; Add or remove columns
-actViewDetailsAddCurrent=Details: Add current column profile...; Add current column profile
-actViewDetailsAddCurrentSpecificToFolder=Details: Add current column profile specific to folder...; Add current column profile specific to folder
+actViewDetailsAddCurrent=Details: Add current columns as new profile...; Add current column profile as a new profile
+actViewDetailsAddCurrentSpecificToFolder=Details: Add current columns as new profile specific to folder...; Add current columns as new profile specific to folder
 actViewDetailsAutoSizeColumns=Details: Auto-resize columns; Auto-resize columns
 actViewFlatViewFiles=Flat mode - files; Toggle structureless view for files
 actViewFlatViewFolders=Flat mode - folders; Toggle structureless view for folders
@@ -2538,6 +3070,7 @@ actViewImgBrowser96=Thumbnails 96; Switch to thumbnails view (96 pixels)
 actViewImgBrowser120=Thumbnails 120; Switch to thumbnails view (120 pixels)
 actViewImgBrowser192=Thumbnails 192; Switch to thumbnails view (192 pixels)
 actViewImgBrowser256=Thumbnails 256; Switch to thumbnails view (256 pixels)
+actViewImgBrowser512=Thumbnails 512 ; Switch to thumbnails view (512 pixels)
 actViewSwitchToNextView=Toggle views; Switch between views 
 actViewLayoutEdit=Edit &layouts...; Edit layouts
 actViewLayoutRestore=Restore layout; Switch back to last layout
@@ -2568,9 +3101,12 @@ actViewSetActivePanel=Set active pane; Switch active pane
 actViewMinimize=Minimize; Minimize FreeCommander window
 actViewSwitchHiddenSystem=Toggle hidden and system files; Toggle hidden/system files
 actViewSwitchInfoTips=File tooltips; Toggle visibility of file tooltips
+actViewSwitchFoldersVisibility=Folders; Toggle visibility of folders
+actViewSwitchToolbarVisibility=Toolbars; Toggle visibility of toolbars
 actViewPopupViews=Views; Show popup menu of views
 actViewSortFilterPopupMenu=Sort/Filter popup menu; Show sort/filter popup menu
-actViewQuickView=Quick view pane; Show current file in quick view pane
+actViewQuickView=Quick view pane; Toggle visibility of quick view pane
+actViewQuickViewSetFocus=Set focus to quick view pane; Activate quick view pane
 actViewTabNew=Tab: New folder tab; Create and activate new folder tab
 actViewTabNewNoActive=Tab: New folder tab; Create new folder tab
 actViewTabProperties=Tab: Properties...; Tab properties
@@ -2588,7 +3124,7 @@ actViewTabNext=Tab: Next folder tab; Activate next folder tab
 actViewTabPrev=Tab: Previous folder tab; Activate previous folder tab
 actViewTabOpenItemInNewTab=Tab: Open in new folder tab; Open current item in new folder tab
 actViewTabOpenItemInNewTabSecondPane=Tab: Open in new folder tab in other pane; Open current item in new folder tab in inactive pane
-actViewTabOpenLastlyClosedTab=Tab: Open lastly closed tab; Open last closed tab in active pane
+actViewTabOpenLastlyClosedTab=Tab: Open last closed tab; Open last closed tab in active pane
 actViewTabShowPopupMenu=Tab: Show popup menu; Show popup menu containing list of all tabs
 actViewTabShowContextMenu=Tab: Show context menu; Show context menu for current tab
 actViewTabNewFileCart=Tab container: New file container tab; Create and activate new file container tab
@@ -2604,8 +3140,12 @@ actViewShowFunBar=Function bar; Toggle visibility of function bar
 actViewOpenArchiveItem=Open archive; Open archive file
 actViewMainMenu=Show/hide main menu; Toggle visibility of main menu
 actViewMainMenuAsPopup=Show main menu as popup menu; Show main menu as popup menu
+actViewColorSchemasPopupMenu=Show color schemas popup menu; Show popup menu with saved color schemas
+actViewColorSchemaSaveCurrent=Save color schema...; Save current color schema
+actViewColorSchemaRemove=Remove color schema...; Remove color schema
+actViewColorSchemaRestore=Restore last color schema; Restore last used color schema
 
-actFtpDisconnect=Disconnect; Disconnect FTP connection 
+actFtpDisconnect=Disconnect FTP; Disconnect FTP connection 
 actFtpShowAsdrive=Show FTP as drive; Toggle visibility of FTP drive
 
 actFavoriteOpen=Favorite
