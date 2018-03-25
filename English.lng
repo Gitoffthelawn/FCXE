@@ -15,10 +15,10 @@
 ;
 ; Copyright (c) 2015-2018 Gitoffthelawn.  All rights reserved.
 ;
-; Version 7.70.04 (updated 2018/03/22)
+; Version 7.73.01 (updated 2018/03/24)
 ; Available at: https://github.com/Gitoffthelawn/FCXE
 ;
-; Compatible with FreeCommander XE (build 770)
+; Compatible with FreeCommander XE (build 773)
 ;
 ;
 ; Based on original translation by unknown author.
@@ -140,7 +140,7 @@
 4028=Define...
 4029=Windows XP
 4030=Classic
-4031=Color schemas
+4031=Color schemes
 
 4501=This tab is locked. Close anyway?
 4502=This operation deletes items from both the disk and the container!
@@ -231,12 +231,13 @@
 4585=Other
 4586=Loading content of
 4587=File or folder with the new name "%s" already exists!
-4588=Color schema name:
-4589=Color schema already exists. Overwrite?
-4590=Current color schema saved as "%s"
+4588=Color scheme name:
+4589=Color scheme already exists. Overwrite?
+4590=Current color scheme saved as "%s"
 4591=No colors saved for the selected layout!
-4592=Delete the color schema file?
- 
+4592=Delete the color scheme file?
+4593=Disk space free:
+
 6001=User canceled entire job
 6002=System canceled entire job
 6003=Need to elevate the process to complete the operation
@@ -358,6 +359,7 @@
 34233=Show queue bar directly below status row
 34234=Always perform copy operation for left-button drag && drop
 34235=Operation queue works only if the option "Use FreeCommander" in the General tab is selected.
+34236=Only drag items from icon/name
 
 
 34250=no_translate: Settings - FTP
@@ -1770,6 +1772,7 @@
 57074=Move ACLs across volumes
 57075=Show errors only
 57076=Expert options
+57077=Save overwrite options (except hidden/system items)
 
 
 58000=no_translate: Viewer Form
@@ -2244,7 +2247,9 @@
 61233=Profile:
 61234=%d File(s), %d Folder(s), %d Error(s)
 61235=Reset per folder
-
+61236=Parent folder, level # (1-9)
+61237=Parent folder from x, level # (1-9)
+61238=Parent folder from x to y, level # (1-9)
 
 62000=no_translate: Filter Hints
 62001=Regular expression (regex) filter:
@@ -2541,10 +2546,10 @@
 67514=Save current layout
 67515=Layout name:
 67516=Overwrite existing layout?
-67517=Save color schema
-67518=Set color schema only
-67519=Import color schema
-67520=Export color schema
+67517=Save color scheme
+67518=Set color scheme only
+67519=Import color scheme
+67520=Export color scheme
 
 
 67900=no_translate: Dialog Print Folder
@@ -3094,6 +3099,7 @@ actViewSplit100_50=Toggle single/dual pane(s); Toggle between dual pane and sing
 actViewSplitSwitch=Toggle split orientation; Switch panes to horizontal or vertical layout
 actViewTree=&Tree; Toggle folder tree display
 actViewTreeCollapse=Tree - collapse all; Collapse all tree nodes
+actViewTreeCollapseExceptSelected=Tree - collapse all except selected; Collapse all tree nodes, except selected node
 actViewFavoriteItemsTree=&Favorite items tree; Toggle visibility of favorite items tree 
 actViewRefreshAll=Refresh all; Refresh content of all panes
 actViewRefreshNetwork=Refresh network; Reset cached server list
@@ -3140,10 +3146,10 @@ actViewShowFunBar=Function bar; Toggle visibility of function bar
 actViewOpenArchiveItem=Open archive; Open archive file
 actViewMainMenu=Show/hide main menu; Toggle visibility of main menu
 actViewMainMenuAsPopup=Show main menu as popup menu; Show main menu as popup menu
-actViewColorSchemasPopupMenu=Show color schemas popup menu; Show popup menu with saved color schemas
-actViewColorSchemaSaveCurrent=Save color schema...; Save current color schema
-actViewColorSchemaRemove=Remove color schema...; Remove color schema
-actViewColorSchemaRestore=Restore last color schema; Restore last used color schema
+actViewColorSchemasPopupMenu=Show color schemes popup menu; Show popup menu with saved color schemes
+actViewColorSchemaSaveCurrent=Save color scheme...; Save current color scheme
+actViewColorSchemaRemove=Remove color scheme...; Remove color scheme
+actViewColorSchemaRestore=Restore last color scheme; Restore last used color scheme
 
 actFtpDisconnect=Disconnect FTP; Disconnect FTP connection 
 actFtpShowAsdrive=Show FTP as drive; Toggle visibility of FTP drive
