@@ -15,10 +15,10 @@
 ;
 ; Copyright (c) 2015-2018 Gitoffthelawn.  All rights reserved.
 ;
-; Version 7.73.01 (updated 2018/03/24)
+; Version 7.74.01 (updated 2018/05/13)
 ; Available at: https://github.com/Gitoffthelawn/FCXE
 ;
-; Compatible with FreeCommander XE (build 773)
+; Compatible with FreeCommander XE (build 774)
 ;
 ;
 ; Based on original translation by unknown author.
@@ -1027,6 +1027,7 @@
 36818=Date
 36819=By item name length
 36820=Fill remaining space
+36821=All subfolder levels for columns: files and folders
 
 
 37000=no_translate: Dialog Status Info Details
@@ -1866,13 +1867,29 @@
 58088=Play
 58089=Pause
 58090=Stop
-58091=Save...
+58091=Save as...
 58092=Print preview...
 58093=Frame:
 58094=Thumbnail size
 58095=Loading error...
 58096=File format is not supported.
 58097=Show EXIF info
+58098=Undo
+58099=Redo
+58100=Reload
+58101=Cropping mode
+58102=Apply cropping
+58103=Cancel cropping mode
+58104=Red eye reduction mode
+58105=Apply red eye reduction
+58106=Cancel red eye reduction mode
+58107=Flip horizontal
+58108=Flip vertical
+58109=Sharpen
+58110=Rotate counterclockwise 90°
+58111=Rotate clockwise 90°
+58112=Convert to grayscale
+58113=Show action toolbar
 
 58200=VLC Player (must be installed)
 58201=Play
