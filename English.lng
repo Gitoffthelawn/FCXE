@@ -15,10 +15,10 @@
 ;
 ; Copyright (c) 2015-2018 Gitoffthelawn.  All rights reserved.
 ;
-; Version 7.74.01 (updated 2018/05/13)
+; Version 7.76.01 (updated 2018/06/22)
 ; Available at: https://github.com/Gitoffthelawn/FCXE
 ;
-; Compatible with FreeCommander XE (build 774)
+; Compatible with FreeCommander XE (build 776)
 ;
 ;
 ; Based on original translation by unknown author.
@@ -237,6 +237,7 @@
 4591=No colors saved for the selected layout!
 4592=Delete the color scheme file?
 4593=Disk space free:
+4594=Clear field
 
 6001=User canceled entire job
 6002=System canceled entire job
@@ -625,7 +626,7 @@
 35109=Show drive button in address bar
 35110=Show icon only (without drive letter)
 35111=Show Eject/Load items for optical drives in drive button popup menu
-35112=Show FTP as drive
+35112=Show SFTP/FTP as drive
 35113=Show network as drive
 35114=Show removable drives only with media
 35115=Hide floppy drives (A:, B:)
@@ -1232,6 +1233,30 @@
 45001=Password needed
 45002=Enter password:
 45003=Enter username:
+45004=Remember password until FreeCommander is closed
+45005=Remember username and password until FreeCommander is closed
+
+45500=no_translate: Dialog Server Authentication
+45501=Server Authentication
+45502=The key of the server is unknown. The authenticity of the server cannot be verified!
+45503=Trust this server and save the key until FreeCommander is closed
+45504=Trust this server and save the key permanently in the registry
+45505=Trust this server and save the key permanently in the file
+45506=Details received from server
+45507=Server:
+45508=Server key fingerprint:
+45509=Please verify the key of the server!
+45510=Are you sure you want to continue connecting?
+45511=Server key mismatch
+45512=Warning: Potential security violation!
+45513=The server key does not match the key that was cached.
+45514=Please contact the server administrator and ask if the key was changed.
+45515=Update the cached key for this server
+45516=Key type:
+45517=Key length:
+45518=Key MD5:
+45519=Key SHA2:
+45520=SFTP connection:
 
 
 46000=no_translate: Dialog Confirm Overwrite
@@ -1890,6 +1915,9 @@
 58111=Rotate clockwise 90°
 58112=Convert to grayscale
 58113=Show action toolbar
+58114=Please select an eye
+58115=Reduce size
+58116=Enable orientation adjust
 
 58200=VLC Player (must be installed)
 58201=Play
@@ -2665,6 +2693,9 @@
 68053=Deflate
 68054=Throughput upper limit in KB/s (0 = no limit):
 68055=Batch size in bytes:
+68056=SFTP Connection
+68057=Saving the password is a security risk.
+68058=Continue with saving?
 
 
 68500=no_translate: Dialog FTP Download
@@ -2728,15 +2759,15 @@
 
 
 69050=no_translate: FTP popup menu
-69051=FTP connect
-69052=Delete FTP connection
+69051=Connect
+69052=Delete connection
 69053=Properties...
 
 
 69100=no_translate: FTP operations
 69101=File size is bigger than %s.
 69102=Do you want to temporarily download the file?
-69103=Delete the FTP connection definition?
+69103=Delete the %s connection definition?
 
 
 69200=no_translate: Dialog FTP Attributes
@@ -2771,6 +2802,7 @@
 69229=Cancel the operation?
 69230=%d error(s)
 69231=Aborted by user
+69232=SFTP Attributes
 
 
 69500=no_translate: Operation Queue Form
@@ -2974,6 +3006,7 @@ actEditDeselect=Unselect group...; Open dialog box to unselect some items in act
 actEditDeselectAll=&Unselect all; Unselect all items in active pane
 actEditDeselectUnderCursor=Unselect files with same extension; Unselect all files with same extension in active pane
 actEditFileName2Clip=Copy selected names; Copy names of selected items as text to clipboard
+actEditFileNameWithoutExt2Clip=Copy selected names without extensions; Copies names of selected items without extensions to clipboard
 actEditFileName2Clip83=Copy selected names (8.3); Copy names of selected items as text to clipboard (DOS 8.3 format)
 actEditFilePath2Clip=Copy selected path names; Copy fully qualified names of selected items as text to clipboard
 actEditFilePath2Clip83=Copy selected path names (8.3); Copy fully qualified names of selected items as text to clipboard (DOS 8.3 format)
@@ -3009,6 +3042,7 @@ actExtrShortCuts=D&efine keyboard shortcuts...; Edit keyboard shortcuts
 actExtrFavoriteToolsEdit=Edit favorite tools...; Edit favorite tools
 actExtrFavoriteTools=Favorite tools; Show popup menu of favorite tools
 actExtrFtpNewConnection=FTP connection...; Show dialog box to define new FTP connection
+actExtrSFtpNewConnection=SFTP new connection...; Show dialog box to define new SFTP connection
 actExtrLanguageToggle=Switch language; Switch between native and English language
 actExtrLanguageReload=Reload language; Reload language file 
 actExtrLanguagePrg=Use internal program language; Use internal program language instead of external file 
