@@ -15,10 +15,10 @@
 ;
 ; Copyright (c) 2015-2018 Gitoffthelawn.  All rights reserved.
 ;
-; Version 7.76.01 (updated 2018/06/22)
+; Version 7.77.01 (updated 2018/07/27)
 ; Available at: https://github.com/Gitoffthelawn/FCXE
 ;
-; Compatible with FreeCommander XE (build 776)
+; Compatible with FreeCommander XE (build 777)
 ;
 ;
 ; Based on original translation by unknown author.
@@ -238,10 +238,68 @@
 4592=Delete the color scheme file?
 4593=Disk space free:
 4594=Clear field
+4595=AND operator:
+4596=NOT operator:
+
 
 6001=User canceled entire job
 6002=System canceled entire job
 6003=Need to elevate the process to complete the operation
+6004=Source and destination file are the same
+6005=Trying to rename a file into a different location, use move instead
+6006=One source specified, multiple destinations
+6007=The destination is a sub-tree of the source
+6008=The destination is the same folder as the source
+6009=Existing destination file with same name as folder
+6010=Existing destination folder with same name as file
+6011=File too large for destination file system
+6012=Destination device is full and happens to be removable
+6013=Destination is a Read-Only CD-ROM, possibly unformatted
+6014=Destination is a Read/Write CD-ROM, possibly unformatted
+6015=Destination is a Recordable Audio CD, possibly unformatted
+6016=Destination is a Read-Only DVD, possibly unformatted
+6017=Destination is a Read/Write DVD, possibly unformatted
+6018=Destination is a Recordable Audio DVD, possibly unformatted
+6019=Source is a Read-Only CD-ROM, possibly unformatted
+6020=Source is a Read/Write CD-ROM, possibly unformatted
+6021=Source is a Recordable Audio CD, possibly unformatted
+6022=Source is a Read-Only DVD, possibly unformatted
+6023=Source is a Read/Write DVD, possibly unformatted
+6024=Source is a Recordable Audio DVD, possibly unformatted
+6025=Invalid source path
+6026=Invalid destination path
+6027=Source files within folders where the entire path is longer than MAX_PATH
+6028=Destination files would be within folders where the entire path is longer than MAX_PATH
+6029=Source is a root directory, cannot be moved or renamed
+6030=Destination is a root directory, cannot be renamed
+6031=Security problem on source
+6032=Security problem on destination
+6033=Source file does not exist, or is unavailable
+6034=Destination file does not exist, or is unavailable
+6035=Source file is on a disconnected network location
+6036=Destination file is on a disconnected network location
+6037=Sharing Violation on source
+6038=Sharing Violation on destination
+6039=Destination exists, cannot replace
+6040=Destination with read-only attribute exists, cannot replace
+6041=Destination with system attribute exists, cannot replace
+6042=Destination folder exists, cannot replace
+6043=Secondary Stream information would be lost
+6044=Extended Attributes would be lost
+6045=Property would be lost
+6046=Properties would be lost
+6047=Encryption would be lost
+6048=Entire operation likely will not fit
+6049=Entire operation likely will not fit, clean-up wizard available
+6050=Cannot read source folder
+6051=Unknown recycle error
+6052=Recycling not available (usually turned off)
+6053=Item is too large for the Recycle Bin
+6054=Folder is too deep to fit in the Recycle Bin
+6055=Recycle Bin unavailable or not found
+6056=Name of new file being created is too long
+6057=Name of new folder being created is too long
+6058=Firectory being processed is not empty
 
 
 33200=no_translate: Default Columns Title
@@ -612,6 +670,9 @@
 34956=Registry update failed.
 34957=Cannot delete key:
 34958=Open any folder with FreeCommander
+34959=Apply to
+34960=Current user (recommended)
+34961=All users
 
 
 35100=no_translate: Settings - Drives
@@ -1127,6 +1188,9 @@
 38041=Show basket icon
 38042=Left border
 38043=Right border
+38044=Use in layouts
+38045=Select layouts in which this toolbar should be used.
+38046=Do not select layouts if the toolbar is always to be used.
 
 
 38900=no_translate: Action Categories
@@ -1559,6 +1623,8 @@
 55032=on the left
 55033=at the top
 55034=pixels
+55035=Duplicate
+55036=Drag && drop to move to another toolbar
 
 
 55201=Name:
@@ -2047,6 +2113,7 @@
 58597=Seek program...
 58598=as Windows preview
 58599=Starting with Windows Vista
+58600=Ignore list:
 
 
 58950=no_translate: Viewer "Go to" dialog
@@ -2129,6 +2196,7 @@
 60023=Edit
 60024=Perform
 60025=Options
+60026=Items:
 
 
 61000=no_translate: Multi Rename Form 
@@ -2595,6 +2663,7 @@
 67518=Set color scheme only
 67519=Import color scheme
 67520=Export color scheme
+67521=Ignore main window size and position
 
 
 67900=no_translate: Dialog Print Folder
@@ -2904,6 +2973,25 @@
 69905=Access donor version
 
 
+70300=no_translate: Archiver plugins
+70301=No more files in archive
+70302=Not enough memory
+70303=Data has errors
+70304=CRC error in archive data
+70305=Archive format is unknown
+70306=Cannot open existing file
+70307=Cannot create file
+70308=Error closing file
+70309=Error reading from file
+70310=Error writing to file
+70311=Buffer is too small
+70312=Function was canceled by user
+70313=No files found or file header encrypted
+70314=Too many files to pack
+70315=Function is not supported
+70316=Archive file not found
+
+
 
 [ShortCutsTxt]
 actDirBack=Go up; Up one level
@@ -2978,7 +3066,8 @@ actDirQuickFilterSet6=Quick filter 6; Set predefined quick filter 6
 actDirQuickFilterSet7=Quick filter 7; Set predefined quick filter 7
 actDirQuickFilterSet8=Quick filter 8; Set predefined quick filter 8
 actDirQuickFilterSet9=Quick filter 9; Set predefined quick filter 9
-actDirQuickFilterPredefinedPopupMenu=Quick filter popup menu; Shows popup menu with predefined quick filters
+actDirQuickFilterPredefinedPopupMenu=Quick filter popup menu; Show popup menu with predefined quick filters
+actDirQuickFilterInverse=Inverse quick filter; Show all not currently visible items for active quick filter
 actDirGoToEdit=Edit path; Edit path in address bar
 actDirGoToEditFromClipboard=Paste path from clipboard and edit; Copy clipboard contents to address bar and start editing
 actDirGoToEditFromClipboardAndOpen=Paste path from clipboard and open; Copy clipboard contents to address bar and refresh pane
@@ -3173,6 +3262,7 @@ actViewTabCopy=Tab: Copy tab to other pane; Copy folder tab to other pane
 actViewTabMove=Tab: Move tab to other pane; Move folder tab to other pane
 actViewTabCloseCurrent=Tab: Close folder tab; Close current folder tab
 actViewTabCloseAll=Tab: Close all folder tabs; Close all unlocked folder tabs
+actViewTabCloseDuplicate=Tab: Close duplicate tabs; Close all unlocked duplicate tabs 
 actViewTabLock=Tab: Lock folder tab; Lock folder tab - permit navigation to other folders
 actViewTabLockNoNavigation=Tab: Lock folder tab - no navigation; Lock folder tab - do not permit navigation
 actViewTabLockNavigationToSubfolder=Tab: Lock folder tab - navigation to subfolders; Lock folder tab - only permit navigation to subfolders
